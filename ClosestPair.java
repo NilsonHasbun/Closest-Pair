@@ -4,7 +4,7 @@
  * and open the template in the editor
  * Nilson David Diaz Hasbun 
  * 200152551 
- * Algorito y complejidad 
+ * Algoritmo y complejidad 
  */
 package closestpair;
 
