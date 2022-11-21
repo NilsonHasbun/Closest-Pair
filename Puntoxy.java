@@ -1,28 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package punto;
 
-/**
- *
- * @author nilsi
- */
-public class Puntoxy {
+package closestpair;
 
-   public static class Punto {
+public class Puntoxy implements Comp<Punto> {
 
-        public int x;
-        public int y;
+   private static class Punto {
+
+        private int x;
+        private int y;
+      
+      /**
+ * Genera un punto, con las coordenadas x e y proporcionadas.<p>
+ * Estas coordenadas son enteras y no pueden ser modificadas <p>.
+ * Entradas: y x y un entero y <p>
+ * Salidas: Un objeto punto con las coordenadas especificadas.
+ * @param x Un entero
+ * @param y Otro entero
+ * */
 
         Punto(int x, int y) {
             this.x = x;
             this.y = y;
         }
     }
-    public static void main(String[] args) {
-        // TODO code application logic here
+      public int getX() {
+        return this.x;
     }
-    
+
+    public int getY() {
+        return this.y;
+    }
+
+    @Override
+    /**
+     * Esta implementación no comparable impide la existencia de dos puntos con el mismo valor x
+     * */
+    public int compareTo(Punto o) {
+        return this.x - o.x
 }
