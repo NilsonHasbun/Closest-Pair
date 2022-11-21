@@ -17,17 +17,6 @@ import java.util.Random;
  */
 public class ClosestPair {
 
-    public static class Punto {
-
-        public int x;
-        public int y;
-
-        Punto(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
-
     public static ArrayList PuntoL = new ArrayList<Punto>();
 
     public static void main(String[] args) {
