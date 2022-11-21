@@ -1,32 +1,22 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor
- * Nilson David Diaz Hasbun 
- * 200152551 
- * Algoritmo y complejidad 
+ * Algoritmo y complejidad                         Noviember 2022.
+ * Nombre: Nilson David Diaz Hasbun 
+ * Codigo: 200152551 
+ * Prof. M. Diaz-Maldonado
+ * Lab 2: Closest Pair
+ * 
+ * Synopsis:
+ * Se nos ordeno hacer un algoritmo que determine el par de puntos más cercano de un grupo de puntos
+ * usando primero una implementación de fuerza bruta y luego usando la estrategia de dividir y conquistar
+ * estrategia.
  */
 package closestpair;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * /
- * @author nilsi
- */
+
 public class ClosestPair {
-
-    public static class Punto {
-
-        public int x;
-        public int y;
-
-        Punto(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
 
     public static ArrayList PuntoL = new ArrayList<Punto>();
 
